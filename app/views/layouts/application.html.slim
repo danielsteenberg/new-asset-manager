@@ -1,11 +1,13 @@
-= render "shared/header"
+doctype html
+html lang="en"
 
-= render "shared/nav"
+  = render "shared/header"
+
+  = render "shared/nav"
 
 body
 
-= yield
-
+  = yield
 
 footer
-    = render "shared/footer"
+  = render "shared/footer"
