@@ -1,0 +1,114 @@
+/! Header Carousel
+header#myCarousel.carousel.slide
+  /! Indicators
+  ol.carousel-indicators
+    li.active data-slide-to="0" data-target="#myCarousel" 
+    li data-slide-to="1" data-target="#myCarousel" 
+    li data-slide-to="2" data-target="#myCarousel" 
+  /! Wrapper for slides
+  .carousel-inner
+    .item.active
+      .fill style="background-image:url('http://www.tnooz.com/wp-content/uploads/2012/09/asset-management.jpg');" 
+      .carousel-caption
+        /! <h2>Caption 1</h2
+    .item
+      .fill style="background-image:url('http://www.richterbet.com/wp-content/uploads/2013/12/software-asset-management.jpg');" 
+      .carousel-caption
+        /! <h2>Caption 2</h2
+    .item
+      .fill style="background-image:url('http://www.sagaselect-am.com/data/images/446_8c174906bc5449ab6578aaa00a19a4f1.jpg');" 
+      .carousel-caption
+        /! <h2>Caption 3</h2
+  /! Controls
+  a.left.carousel-control data-slide="prev" href="#myCarousel" 
+    span.icon-prev
+  a.right.carousel-control data-slide="next" href="#myCarousel" 
+    span.icon-next
+/! Page Content
+.container
+  /! Marketing Icons Section
+  .row
+    .col-lg-12
+      h1.page-header
+        | Welcome to Asset Manager
+    .col-md-4
+      .panel.panel-default
+        .panel-heading
+          h4
+            i.fa.fa-fw.fa-check
+            | About Asset Manager
+        .panel-body
+          p
+            | Asset Manager is a system designed to keep track of all users and the items
+            | that have been assigned to them. The point of this systems is to keep track
+            | of all assets that have been bought by the company and to whom they have been assigned to.
+          a.btn.btn-default href="#"  Learn More
+    .col-md-4
+      .panel.panel-default
+        .panel-heading
+          h4
+            i.fa.fa-fw.fa-gift
+            | Purpose
+        .panel-body
+          p
+            | The Purpose of this app is to keep track of all company assets and to whom they have been
+            | assigned to. In this application, you will also be able to keep track of the status of the
+            | assets, whether it is damaged or sent out for repair or insurance claims.
+          a.btn.btn-default href="#"  Learn More
+    .col-md-4
+      .panel.panel-default
+        .panel-heading
+          h4
+            i.fa.fa-fw.fa-compass
+            | Contact for Enquiries
+        .panel-body
+          p
+            | You are welcome to send us a mail for if you have any complaints or questions that you might
+            | have with using this application. Once you have sent us a mail, we will respond with
+            | feedback on what the best solution is to help you with using this application.
+          a.btn.btn-default href="#"  Contact Us
+  /! /.row
+  /! Portfolio Section
+  .row
+    .col-lg-12
+      h2.page-header Screenshots of the System
+    .col-md-4.col-sm-6
+      a href="portfolio-item.html" 
+        img.img-responsive.img-portfolio.img-hover alt="" src="https://docs.typo3.org/typo3cms/extensions/dbtable_to_htmltable/_images/manual_html_m58cb66361.png" /
+    .col-md-4.col-sm-6
+      a href="portfolio-item.html" 
+        img.img-responsive.img-portfolio.img-hover alt="" src="https://www.sysaid.com/Sysforums/templates/default/help/files/Guide_Getting_Started_files/Asset%20list.jpg" /
+    .col-md-4.col-sm-6
+      a href="portfolio-item.html" 
+        img.img-responsive.img-portfolio.img-hover alt="" src="http://www.brookings.edu/~/media/multimedia/interactives/2014/InfrastructureJobs/figures/Table1.jpg" /
+  /! /.row
+  /! Features Section
+  .row
+    .col-lg-12
+      h2.page-header Asset Manager Features
+    .col-md-6
+      p The Asset Manager aims to:
+      ul
+        li Record Employee infomation
+        li Keep track of company Assets
+        li Keep track of insurance claims
+        li Keep track of Cost and comapny expenditure
+        li Edit and change infomation that is logged into the database
+      p
+        | If there are anything that you are uncertain about or think that we should add then please refer
+        | to our contact us page.
+    .col-md-6
+      img.img-responsive alt="" src="http://webdamcom.c.presscdn.com/wp-content/uploads/2014/02/Benefits-of-digital-asset-management-software.png" /
+  /! /.row
+  hr/
+  /! Call to Action Section
+  .well
+    .row
+      .col-md-8
+        p
+          | If you interested in using this system, please click on the sign up
+          | or login button on the right
+      .col-md-4
+        a.btn.btn-lg.btn-default.btn-block href="#"  Login/Sign up
+  hr/
+  /! Footer
