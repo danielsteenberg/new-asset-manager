@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :models
 resources :welcome
+resources :login
 
 get "welcome/index"
+get "user/login"
+get "models/sign_up"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

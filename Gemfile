@@ -23,6 +23,8 @@ gem 'sass-rails', '>= 3.2'
 gem 'slim'
 gem 'slim-rails'
 
+gem 'devise'
+
 group :development do
  
   gem 'byebug'
