@@ -44,12 +44,12 @@ nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"
               li: a href="#"Delete Employee    
 
         li
-        - if model_signed_in? 
-          = current_model.email
-          = link_to "  Sign out", destroy_model_session_path, method: 'delete'
+        - if user_signed_in? 
+          = current_user.email
+          = link_to "  Sign out", destroy_user_session_path, method: 'delete'
         - else
-          = link_to "Sign up  ", new_model_registration_path
-          = link_to "Sign in", new_model_session_path
+          = link_to "Sign up  ", new_user_registration_path
+          = link_to "Sign in", new_user_session_path
         end
         / .navbar-collapse
         
