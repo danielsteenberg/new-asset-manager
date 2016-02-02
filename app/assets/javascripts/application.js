@@ -15,4 +15,5 @@
 //= require jquery_ujs
 //= require global
 //= require turbolinks
+//= require action-slider
 

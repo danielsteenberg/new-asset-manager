@@ -11,10 +11,11 @@ h2 {
 }
 
 .field {
-	margin: 10%;
-	margin-left: 30%;
+    margin: 0%;
+    height: 77px;
+    padding: 10%;
+    margin-left: 15%;
 }
-
 .actions {
 	margin: 10%;
 	margin-left: 60%;
@@ -23,4 +24,13 @@ h2 {
 input {
 	background: linear-gradient(black, grey);
     color: white;
+}
+
+.new_user {
+    padding: 3%;
+    border: solid;
+    position: relative;
+    height: 400px;
+    width: 34%;
+    left: 25%;
 }

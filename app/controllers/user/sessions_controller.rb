@@ -1,8 +1,19 @@
 class User::SessionsController < Devise::SessionsController
 
   def login
-    flash[:notice] = "Signed in"
   end
+
+  def new 
+  end
+
+  def create
+  end
+
+  end
+
+  def destroy
+  end
+
 # before_filter :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in

@@ -5,4 +5,8 @@ before_action :set_welcome, only: [:show]
 		
   end
 
+  def show
+  	
+  end
+
 end
