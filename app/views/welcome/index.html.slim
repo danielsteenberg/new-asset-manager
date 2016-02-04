@@ -30,9 +30,10 @@ header#myCarousel.carousel.slide
   .row
     .col-lg-12
       h1.page-header
+        .alert.alert-success
+          = flash.notice
+          = flash.alert
         | Welcome to Asset Manager
-        = flash.notice
-        = flash.alert
     .col-md-4
       .panel.panel-default
         .panel-heading
