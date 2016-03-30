@@ -48,7 +48,8 @@ nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"
               li: a href="#"Add Employee
               li: a href="#"Update Employee
               li: a href="#"Delete Employee    
-
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      ul class="nav navbar-nav navbar-right"       
         li
         - if user_signed_in? 
           = current_user.email

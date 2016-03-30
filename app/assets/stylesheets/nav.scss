@@ -20,12 +20,9 @@ a, a:visited {
   text-align: bottom;
 }
 
-.navbar-right, {
-  color:	white;
-}
-
 .navbar-right a {
-  position: bottom;
+    position: bottom;
+    color: white;
 }
 
 title {
@@ -36,4 +33,9 @@ title {
   float: left !important;
   position: absolute;
   font-size: xx-large;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    position: relative;
 }
