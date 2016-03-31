@@ -8,6 +8,7 @@ get "welcome/index"
 get "user/login"
 get "user/sign_up"
 get "employee/employee"
+get "laptop/laptop"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
