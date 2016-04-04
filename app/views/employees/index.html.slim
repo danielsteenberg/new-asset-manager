@@ -6,15 +6,15 @@
     table
       thead
         tr
-          th Fist Name
+          th First Name
           th Last Name
           th
 
       tbody
         - @employees.each do |employee|
           tr
-            td = employee.fname
-            td = employee.lname
+            td = employee.first_name
+            td = employee.last_name
             td 
               = button_to 'view', employee, :method => :get
               = button_to 'Edit', edit_employee_path(employee), :method => :get
