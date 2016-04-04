@@ -1,0 +1,10 @@
+.container
+	h1 Editing employee
+
+	.float-left
+		== render 'form'
+
+	= button_to 'Show', @employee, :method => :get
+	'|
+	= button_to 'Back', employees_path, :method => :get
+

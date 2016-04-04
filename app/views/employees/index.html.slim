@@ -1,0 +1,34 @@
+.container
+  .page-header
+    h1 Employees
+
+  .float-left
+    table
+      thead
+        tr
+          th Fist Name
+          th Last Name
+          th
+
+      tbody
+        - @employees.each do |employee|
+          tr
+            td = employee.fname
+            td = employee.lname
+            td 
+              = button_to 'view', employee, :method => :get
+              = button_to 'Edit', edit_employee_path(employee), :method => :get
+              = button_to 'Delete', employee, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+    br
+
+    = button_to 'New Employee', new_employee_path, :method => :get
+
+  .float-right
+    h2 Search Bar
+    form.search-form
+      | Enter Search item here:
+      br/
+      input name="username" type="text" /
+      br/
+      input.button onclick="alert('Search')" type="button" value="Search" /

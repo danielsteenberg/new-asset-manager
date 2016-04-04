@@ -1,0 +1,7 @@
+.container
+	h1 New Employee
+
+	.form
+	  == render 'form'
+		
+	= button_to 'Back', employees_path, :method => :get

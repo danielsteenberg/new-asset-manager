@@ -1,0 +1,16 @@
+
+.page-header
+    h1 Employee Details
+.container
+	p#notice = notice
+	
+	.form
+		p
+  		strong First Name:
+  		= @employee.fname
+		p
+  		strong Last Name:
+  		= @employee.lname
+
+		= button_to 'Edit', edit_employee_path(@employee), :method => :get
+		= button_to 'Back', employees_path, :method => :get

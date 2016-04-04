@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :employees
+
   devise_for :users
 resources :welcome
 resources :login
@@ -9,6 +11,7 @@ get "user/login"
 get "user/sign_up"
 get "employee/employee"
 get "laptop/laptop"
+get "employees/index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
