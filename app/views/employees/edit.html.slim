@@ -1,0 +1,10 @@
+.container
+	h1 Editing employee
+
+	.float-left
+		== render 'form'
+
+	= link_to 'Show', @employee, class: 'btn btn-primary'
+	'|
+	= link_to 'Done', employees_path, class: 'btn btn-primary'
+
