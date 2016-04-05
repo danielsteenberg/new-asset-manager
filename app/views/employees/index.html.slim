@@ -6,23 +6,27 @@
     table
       thead
         tr
+          th No.
           th First Name
           th Last Name
+          th Department
           th
 
       tbody
         - @employees.each do |employee|
           tr
+            td = employee.id
             td = employee.first_name
             td = employee.last_name
+            td = employee.department
             td 
-              = button_to 'view', employee, :method => :get
-              = button_to 'Edit', edit_employee_path(employee), :method => :get
-              = button_to 'Delete', employee, data: {:confirm => 'Are you sure?'}, :method => :delete
+              = link_to 'view', employee_path(employee.id), class: 'btn btn-primary'
+              = link_to 'Edit', edit_employee_path(employee), class: 'btn btn-primary'
+              = link_to 'Delete', employee, data: { :confirm => 'Are you sure?' } , :method => :delete, class: 'btn btn-primary'
 
     br
 
-    = button_to 'New Employee', new_employee_path, :method => :get
+    = link_to 'New Employee', new_employee_path, class: 'btn btn-primary'
 
   .float-right
     h2 Search Bar

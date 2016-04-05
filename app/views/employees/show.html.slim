@@ -11,6 +11,9 @@
 		p
   		strong Last Name:
   		= @employee.last_name
+  		p
+  		strong Department:
+  		= @employee.department
 
-		= button_to 'Edit', edit_employee_path(@employee), :method => :get
-		= button_to 'Back', employees_path, :method => :get
+	= link_to 'Edit', edit_employee_path(@employee), class: 'btn btn-primary'
+	= link_to 'Done', employees_path, class: 'btn btn-primary'

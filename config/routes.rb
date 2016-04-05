@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   resources :employees
 
-  devise_for :users
-resources :welcome
-resources :login
+  devise_for :users 
+  resources :welcome
+  resources :login
 
 get "welcome/index"
 get "user/login"
