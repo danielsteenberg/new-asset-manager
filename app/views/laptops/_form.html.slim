@@ -1,0 +1,21 @@
+= form_for @laptop do |f|
+  - if @laptop.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@laptop.errors.count, "error")} prohibited this laptop from being saved:"
+      ul
+        - @laptop.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :laptop_details
+    = f.text_field :laptop_details
+  .field
+    = f.label :laptop_model
+    = f.text_field :laptop_model
+  .field
+    = f.label :date_of_purchase
+    = f.text_field :date_of_purchase
+  .field
+    = f.label :assignee
+    = f.text_field :assignee
+  .actions = f.submit
