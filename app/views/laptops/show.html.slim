@@ -1,0 +1,21 @@
+.page-header
+	h1 Laptop Details
+.container
+  p#notice = notice
+
+  .form
+    p
+      strong Laptop details:
+      = @laptop.laptop_details
+    p
+      strong Laptop model:
+      = @laptop.laptop_model
+    p
+      strong Date of purchase:
+      = @laptop.date_of_purchase
+    p
+      strong Assignee:
+      = @laptop.assignee
+
+    = link_to 'Edit', edit_laptop_path(@laptop), class: 'btn btn-primary'
+    = link_to 'Done', laptops_path, class: 'btn btn-primary'

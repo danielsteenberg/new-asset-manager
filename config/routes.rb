@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :laptops
+
   resources :employees
 
   devise_for :users 
