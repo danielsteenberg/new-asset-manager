@@ -1,30 +1,22 @@
 class LaptopsController < ApplicationController
-  before_action :set_laptop, only: [:show, :edit, :update, :destroy]
+  before_action :set_asset_directory, only: [:show, :edit, :update, :destroy]
 
-  # GET /laptops
-  # GET /laptops.json
   def index
-    @laptops = Laptop.all
+    @asset_directories = AssetDirectory.where(category: 'Laptops')
   end
 
-  # GET /laptops/1
-  # GET /laptops/1.json
   def show
   end
 
-  # GET /laptops/new
   def new
-    @laptop = Laptop.new
+    @laptop = AssetDirectory.new
   end
 
-  # GET /laptops/1/edit
   def edit
   end
 
-  # POST /laptops
-  # POST /laptops.json
   def create
-    @laptop = Laptop.new(laptop_params)
+    @laptop = AssetDirectory.new(asset_directory_params)
 
     respond_to do |format|
       if @laptop.save
@@ -37,11 +29,9 @@ class LaptopsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /laptops/1
-  # PATCH/PUT /laptops/1.json
   def update
     respond_to do |format|
-      if @laptop.update(laptop_params)
+      if @laptop.update(asset_directory_params)
         format.html { redirect_to @laptop, notice: 'Laptop was successfully updated.' }
         format.json { render :show, status: :ok, location: @laptop }
       else
@@ -51,8 +41,6 @@ class LaptopsController < ApplicationController
     end
   end
 
-  # DELETE /laptops/1
-  # DELETE /laptops/1.json
   def destroy
     @laptop.destroy
     respond_to do |format|
@@ -61,14 +49,12 @@ class LaptopsController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_laptop
-      @laptop = Laptop.find(params[:id])
+    private
+    def set_asset_directory
+      @asset_directory = AssetDirectory.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def laptop_params
-      params.require(:laptop).permit(:laptop_details, :laptop_model, :date_of_purchase, :assignee)
+    def asset_directory_params
+      params.require(:asset_directory).permit(:item_model, :item_description, :item_price, :item_attributes, :assignee, :category)
     end
 end

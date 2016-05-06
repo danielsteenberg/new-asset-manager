@@ -7,15 +7,21 @@
           li = message
 
   .field
-    = f.label :laptop_details
-    = f.text_field :laptop_details
+    = f.label :item_model
+    = f.text_field :item_model
   .field
-    = f.label :laptop_model
-    = f.text_field :laptop_model
+    = f.label :item_description
+    = f.text_field :item_description
   .field
-    = f.label :date_of_purchase
-    = f.text_field :date_of_purchase
+    = f.label :item_price
+    = f.number_field :item_price
+  .field
+    = f.label :item_attributes
+    = f.text_field :item_attributes
   .field
     = f.label :assignee
     = f.text_field :assignee
+  .field
+    = f.label :category
+    = f.text_field :category
   .actions = f.submit

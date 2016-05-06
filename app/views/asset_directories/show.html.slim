@@ -1,0 +1,29 @@
+.page-header
+	h1 Asset Details
+.container
+  p#notice = notice
+
+  .form
+		p
+  		strong Item model:
+  		= @asset_directory.item_model
+		p
+  		strong Item description:
+  		= @asset_directory.item_description
+		p
+  		strong Item price:
+  		= @asset_directory.item_price
+		p
+  		strong Item attributes:
+  		= @asset_directory.item_attributes
+		p
+  		strong Assignee:
+  		= @asset_directory.assignee
+		p
+  		strong Item Category:
+  		= @asset_directory.category
+
+  br
+
+		= link_to 'Edit', edit_asset_directory_path(@asset_directory), class: 'btn btn-primary'
+		= link_to 'Done', laptops_path, class: 'btn btn-primary'

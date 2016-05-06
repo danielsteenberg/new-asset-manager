@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :asset_directories
+
   resources :laptops
 
   resources :employees
