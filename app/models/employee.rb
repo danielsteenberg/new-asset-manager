@@ -1,3 +1,3 @@
 class Employee < ActiveRecord::Base
-	has_many :asset_directories
+	has_many :assets
 end

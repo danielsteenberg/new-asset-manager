@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :asset_directories
-
-  resources :laptops
+  resources :assets, :path => 'asset-directory', :as => 'assets'
 
   resources :employees
 
@@ -14,8 +12,9 @@ get "welcome/index"
 get "user/login"
 get "user/sign_up"
 get "employee/employee"
-get "laptop/laptop"
 get "employees/index"
+
+get 'assets/laptops', to: 'assets#laptops', as: 'laptops'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
