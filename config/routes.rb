@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :employees
 
-  devise_for :users 
+  devise_for :users
   resources :welcome
   resources :login
 
