@@ -17,7 +17,7 @@ gem 'nokogiri', '1.6.6.2'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :development do
-	gem 'better_errors'
+  gem 'better_errors'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
