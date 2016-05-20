@@ -1,0 +1,38 @@
+.float-left
+  table
+    thead
+      tr
+        th Item model
+        th Item description
+        th Item price
+        th Item attributes
+        th Category
+        th Assignee
+        th
+
+    tbody
+      - @assets.each do |asset|
+        tr
+          td = asset.item_model
+          td = asset.item_description
+          td = asset.item_price
+          td = asset.item_attributes
+          td = asset.category
+          td = asset.assignee
+          td 
+            = link_to 'Show', asset, class: 'btn btn-primary'
+            = link_to 'Edit', edit_asset_path(asset), class: 'btn btn-primary'
+            = link_to 'Delete', asset, data: {:confirm => 'Are you sure?'}, :method => :delete, class: 'btn btn-primary'
+
+  br
+
+  = link_to 'New Asset directory', new_asset_path, class: 'btn btn-primary'
+
+.float-right
+  h2 Search Bar
+  form.search-form
+    | Enter Search item here:
+    br
+    input name="username" type="text" 
+    br
+    input.button onclick="alert('Search')" type="button" value="Search" 

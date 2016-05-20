@@ -1,0 +1,27 @@
+.page-header
+  h1 Asset Details
+.container
+  p#notice = notice
+
+  .form
+    p
+      strong Item model:
+      = @asset.item_model
+    p
+      strong Item description:
+      = @asset.item_description
+    p
+      strong Item price:
+      = @asset.item_price
+    p
+      strong Item attributes:
+      = @asset.item_attributes
+    p
+      strong Assignee:
+      = @asset.assignee
+    p
+      strong Item Category:
+      = @asset.category
+  br
+    = link_to 'Edit', edit_asset_path(@asset), class: 'btn btn-primary'
+    = link_to 'Done', laptops_path, class: 'btn btn-primary'
