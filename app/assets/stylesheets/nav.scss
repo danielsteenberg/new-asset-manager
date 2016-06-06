@@ -35,9 +35,13 @@ title {
   font-size: xx-large;
 }
 .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-    position: relative;
+  top: 0;
+  border-width: 0 0 1px;
+  position: relative;
+}
+.navbar-inverse {
+  background-color: #222;
+  border-color: #222;
 }
 
 .navbar-right {

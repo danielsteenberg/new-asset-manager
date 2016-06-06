@@ -1,6 +1,12 @@
 div class="asset-nav"
   ul class="asset-nav-bar"
+    li class="label-asset"
+      | Assets
     li
-      = link_to "All Assets", assets_path
-    li
-      = link_to "Laptops", laptops_path
+      = link_to "All Assets", assets_path, class: 'btn btn-info'
+
+    table
+    tbody
+      - Category.all.each do |category|
+        tr
+          td = link_to category.name, category_list_path(category_list_param: category.name), class: 'btn btn-info'
