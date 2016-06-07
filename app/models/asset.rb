@@ -1,4 +1,4 @@
 class Asset < ActiveRecord::Base
   belongs_to :employee
-  has_one :categories
+  has_many :categories
 end
