@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   scope path: "asset-directory" do
     resources :assets, as: 'assets', path: 'all'
-    get 'category_list', to: 'assets#category_list', as: 'category-list', path: 'category-list'
+    get 'items', to: 'assets#items', as: 'items', path: 'items'
   end
 
   resources :categories

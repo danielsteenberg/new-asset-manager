@@ -5,8 +5,8 @@ class AssetsController < ApplicationController
     @assets = Asset.all
   end
 
-  def category_list
-    @assets = Asset.where(category: params[:category_list_param])
+  def items
+    @assets = Asset.where(category: params[:category_param])
   end
 
   def show
