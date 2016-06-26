@@ -59,6 +59,6 @@ class AssetsController < ApplicationController
     end
 
     def asset_params
-      params.require(:asset).permit(:item_model, :item_description, :item_price, :item_attributes, :assignee, :category)
+      params.require(:asset).permit(:item_model, :item_description, :item_price, :item_attributes, :assignee, :category_id)
     end
 end

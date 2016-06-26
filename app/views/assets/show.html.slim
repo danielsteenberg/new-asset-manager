@@ -21,7 +21,7 @@
       = @asset.assignee
     p
       strong Item Category:
-      = @asset.category
+      = @asset.category_id
   br
     = link_to 'Edit', edit_asset_path(@asset), class: 'btn btn-primary'
     = link_to 'Done', assets_path, class: 'btn btn-primary'
