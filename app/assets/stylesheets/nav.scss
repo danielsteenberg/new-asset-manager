@@ -3,26 +3,26 @@
 }
 
 .capture a:visited {
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 a, a:visited {
-  color: black;
+  color: #000;
 }
 
 .nav navbar-nav navbar-right {
-  color: white;
+  color: #FFF;
   width: 70%;
 }
 
 .capture {
-  color: white;
+  color: #FFF;
   text-align: bottom;
 }
 
 .navbar-right a {
     position: bottom;
-    color: white;
+    color: #FFF;
 }
 
 title {
@@ -36,7 +36,7 @@ title {
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0px 0px 1px;
   position: fixed;
 }
 .navbar-inverse {
@@ -45,5 +45,5 @@ title {
 }
 
 .navbar-right {
-  color: blue;
+  color: #0000FF;
 }
