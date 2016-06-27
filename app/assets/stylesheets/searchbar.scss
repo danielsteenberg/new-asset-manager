@@ -1,18 +1,19 @@
 .float-right {
-	float: right;
-	border: 2px solid;
-	width: 20%;
-	overflow: hidden;
-	box-shadow: 3px 3px 2px #888888;
+  float: right;
+  border: 2px solid;
+  width: 20%;
+  overflow: hidden;
+  box-shadow: 3px 3px 2px #888;
 }
 
 .float-left {
-	float: left;
-	overflow: hidden;
+  float: left;
+  overflow: hidden;
+  width: 100%;
 }
 
 .float-right h2 {
-	margin-top: 20px;
+  margin-top: 20px;
   margin-left: 15%;
 }
 
@@ -22,5 +23,20 @@
 }
 
 .search-form {
-	margin-left: 5%;
+  margin-left: 5%;
+}
+
+.search-area {
+  padding-bottom: 2px;
+  height: 15px;
+  width: 80%;
+}
+.input-text-field {
+  width: 85%;
+  height: 30px;
+}
+
+.button {
+  margin-left: 1%;
+  margin-bottom: 1%;
 }

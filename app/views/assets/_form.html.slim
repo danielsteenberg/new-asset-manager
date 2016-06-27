@@ -23,6 +23,7 @@
       = f.text_field :assignee
     .field
       = f.label :category
-      = f.text_field :category
+      br
+      = f.collection_select(:category_id, Category.all.order(:name), :id, :name)
     .actions
       = f.submit

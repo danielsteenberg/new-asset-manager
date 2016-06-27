@@ -5,8 +5,8 @@ class AssetsController < ApplicationController
     @assets = Asset.all
   end
 
-  def laptops
-    @assets = Asset.where(category: 'Laptops')
+  def items
+    @assets = Asset.where(category: params[:category_param])
   end
 
   def show
@@ -59,6 +59,6 @@ class AssetsController < ApplicationController
     end
 
     def asset_params
-      params.require(:asset).permit(:item_model, :item_description, :item_price, :item_attributes, :assignee, :category)
+      params.require(:asset).permit(:item_model, :item_description, :item_price, :item_attributes, :assignee, :category_id)
     end
 end

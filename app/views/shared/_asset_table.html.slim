@@ -1,3 +1,12 @@
+.search-area
+  | Search:
+  input name="text" type="text" class="input-text-field"
+  input.button onclick="alert('Search')" type="button" value="Search"
+br
+= link_to 'New Asset Item', new_asset_path, class: 'btn btn-primary'
+= link_to 'Add Category', new_category_path, class: 'btn btn-primary'
+br
+
 .float-left
   table
     thead
@@ -17,22 +26,9 @@
           td = asset.item_description
           td = asset.item_price
           td = asset.item_attributes
-          td = asset.category
+          td = asset.category.name
           td = asset.assignee
-          td 
+          td
             = link_to 'Show', asset, class: 'btn btn-primary'
             = link_to 'Edit', edit_asset_path(asset), class: 'btn btn-primary'
             = link_to 'Delete', asset, data: {:confirm => 'Are you sure?'}, :method => :delete, class: 'btn btn-primary'
-
-  br
-
-  = link_to 'New Asset directory', new_asset_path, class: 'btn btn-primary'
-
-.float-right
-  h2 Search Bar
-  form.search-form
-    | Enter Search item here:
-    br
-    input name="username" type="text" 
-    br
-    input.button onclick="alert('Search')" type="button" value="Search" 

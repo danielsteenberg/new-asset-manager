@@ -3,30 +3,30 @@
 }
 
 .capture a:visited {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 a, a:visited {
-  color: black;
+  color: #000;
 }
 
 .nav navbar-nav navbar-right {
-  color: white;
+  color: #fff;
   width: 70%;
 }
 
 .capture {
-  color: white;
+  color: #fff;
   text-align: bottom;
 }
 
 .navbar-right a {
     position: bottom;
-    color: white;
+    color: #fff;
 }
 
 title {
-  color: white;
+  color: #fff;
 }
 
 .navbar-left {
@@ -35,11 +35,15 @@ title {
   font-size: xx-large;
 }
 .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-    position: relative;
+  top: 0;
+  border-width: 0px 0px 1px;
+  position: fixed;
+}
+.navbar-inverse {
+  background-color: #222;
+  border-color: #222;
 }
 
 .navbar-right {
-  color: blue;
+  color: #0000ff;
 }

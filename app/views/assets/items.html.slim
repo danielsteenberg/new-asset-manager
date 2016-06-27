@@ -1,6 +1,7 @@
 = render "shared/asset_nav"
 .container
   .page-header
-    h1 All Assets
+    h1
+      = params[:category_param]
 
   = render "shared/asset_table"
