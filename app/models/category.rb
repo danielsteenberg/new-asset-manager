@@ -1,3 +1,3 @@
 class Category < ActiveRecord::Base
-  has_one :asset
+  has_many :assets
 end
