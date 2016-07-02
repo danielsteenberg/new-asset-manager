@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160624071442) do
+ActiveRecord::Schema.define(version: 20160629112850) do
 
   create_table "assets", force: :cascade do |t|
     t.string   "item_model"
@@ -40,6 +40,16 @@ ActiveRecord::Schema.define(version: 20160624071442) do
     t.string   "department"
   end
 
+  create_table "google_users", force: :cascade do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "laptops", force: :cascade do |t|
     t.string   "laptop_details"
     t.string   "laptop_model"
@@ -62,6 +72,8 @@ ActiveRecord::Schema.define(version: 20160624071442) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

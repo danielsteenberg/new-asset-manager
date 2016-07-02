@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   get "user/login"
   get "user/sign_up"
 
-  root 'welcome#index'
+  root 'assets#index'
 end

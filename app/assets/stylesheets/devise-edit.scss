@@ -8,6 +8,7 @@
 h2 {
   margin-top: 70px;
   margin-left: 2%;
+  text-align: center;
 }
 
 .field {
@@ -22,15 +23,8 @@ h2 {
 }
 
 input {
-  background-color: #808080;
-  color: #fff;
-}
-
-.new_user {
-  padding: 3%;
-  border: solid;
-  position: relative;
-  height: 400px;
-  width: 34%;
-  left: 25%;
+  margin-left: 2px;
+  float: right;
+  margin-right: 12px;
+  width: 200px;
 }
