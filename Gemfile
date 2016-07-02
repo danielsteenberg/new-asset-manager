@@ -15,6 +15,8 @@ gem 'slim-rails'
 gem 'devise'
 gem 'nokogiri', '1.6.6.2'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'omniauth'
+gem 'omniauth-google-oauth2' 
 
 group :development do
   gem 'better_errors'
