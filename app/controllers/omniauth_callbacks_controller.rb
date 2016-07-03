@@ -8,7 +8,7 @@ def google_oauth2
       sign_in_and_redirect @user, :event => :authentication
     else
       session["devise.google_data"] = request.env["omniauth.auth"]
-      redirect_to user_login_path
+      redirect_to root_path
     end
   end
 end
