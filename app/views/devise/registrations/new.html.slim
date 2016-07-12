@@ -12,7 +12,7 @@
 
     .field
       = f.label :password 
-      -if @minimum_password_length 
+      - if @minimum_password_length 
       br
       = f.password_field :password, autocomplete: "off"
 
