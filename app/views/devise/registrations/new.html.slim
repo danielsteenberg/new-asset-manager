@@ -13,8 +13,8 @@
     .field
       = f.label :password 
       -if @minimum_password_length 
-        br
-        = f.password_field :password, autocomplete: "off"
+      br
+      = f.password_field :password, autocomplete: "off"
 
     .field
       = f.label :password_confirmation 
@@ -24,4 +24,4 @@
     .actions
       = f.submit "Sign up" 
 
-= render "devise/shared/links"
+      = render "devise/shared/links"

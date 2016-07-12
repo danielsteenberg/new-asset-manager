@@ -7,9 +7,9 @@ h2 Change your password
   .field
     = f.label :password, "New password" 
     br
-      - if @minimum_password_length
-      em 
-      = @minimum_password_length  (characters minimum)
+    - if @minimum_password_length
+    em 
+    = @minimum_password_length  (characters minimum)
     br
     = f.password_field :password, autofocus: true, autocomplete: "off"
 
@@ -21,4 +21,4 @@ h2 Change your password
   .actions
     = f.submit "Change my password"
 
-= render "devise/shared/links"
+    = render "devise/shared/links"
