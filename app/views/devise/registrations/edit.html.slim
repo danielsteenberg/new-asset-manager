@@ -10,7 +10,7 @@ h2 Edit
     = f.email_field :email, autofocus: true
 
     - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    p Currently waiting confirmation for: <%= resource.unconfirmed_email
+      p Currently waiting confirmation for: <%= resource.unconfirmed_email
 
   .field
     = f.label :password 
