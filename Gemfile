@@ -15,6 +15,9 @@ gem 'slim-rails'
 gem 'devise'
 gem 'nokogiri', '1.6.6.2'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'omniauth'
+gem 'omniauth-google-oauth2' 
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 
 group :development do
   gem 'better_errors'

@@ -7,12 +7,12 @@ Rails.application.routes.draw do
 
   resources :categories
   resources :employees
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   resources :welcome
   resources :login
 
   get "user/login"
   get "user/sign_up"
 
-  root 'welcome#index'
+  root 'assets#index'
 end
