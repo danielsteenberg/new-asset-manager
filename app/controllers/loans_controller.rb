@@ -12,10 +12,6 @@ class LoansController < ApplicationController
     @loan = Loan.new
   end
 
-  def status_select
-    @status_select = ["Loaned", "Stolen", "Returned"]
-  end
-
   def edit
   end
 

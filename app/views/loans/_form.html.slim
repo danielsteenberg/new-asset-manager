@@ -14,12 +14,12 @@
       = f.text_field :item
     .field
       = f.label :dateBorrowed
-      = f.number_field :dateBorrowed
+      = f.date_field :dateBorrowed
     .field
       = f.label :dateReturned
-      = f.text_field :dateReturned
+      = f.date_field :dateReturned
     .field
       = f.label :status
-      = select_tag :status, options_for_select(['Loaned', 'Returned', "Late"])
+      = f.select :status, Loan.status_types.keys
     .actions
       = f.submit

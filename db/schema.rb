@@ -62,8 +62,8 @@ ActiveRecord::Schema.define(version: 20160719184117) do
   create_table "loans", force: :cascade do |t|
     t.string   "employee"
     t.string   "item"
-    t.string   "dateBorrowed"
-    t.string   "dateReturned"
+    t.date     "dateBorrowed"
+    t.date     "dateReturned"
     t.string   "status"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
