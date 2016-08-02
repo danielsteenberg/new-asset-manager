@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   resources :welcome
   resources :login
+  resources :loans
 
   get "user/login"
   get "user/sign_up"
