@@ -20,7 +20,7 @@
       - @loans.each do |loan|
         tr
           td = loan.employee
-          td = loan.item
+          td = loan.asset.item_description
           td = loan.dateBorrowed
           td = loan.dateReturned
           td = loan.status

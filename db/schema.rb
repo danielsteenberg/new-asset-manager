@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719184117) do
+ActiveRecord::Schema.define(version: 20160809081900) do
 
   create_table "assets", force: :cascade do |t|
     t.string   "item_model"
@@ -67,7 +67,10 @@ ActiveRecord::Schema.define(version: 20160719184117) do
     t.string   "status"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "asset_id"
   end
+
+  add_index "loans", ["asset_id"], name: "index_loans_on_asset_id"
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", null: false

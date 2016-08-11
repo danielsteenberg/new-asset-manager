@@ -11,7 +11,7 @@
       = f.text_field :employee
     .field
       = f.label :item
-      = f.text_field :item
+      = f.collection_select(:asset_id, Asset.all.order(:item_description), :id, :item_description)
     .field
       = f.label :dateBorrowed
       = f.date_field :dateBorrowed
