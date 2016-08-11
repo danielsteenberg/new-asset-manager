@@ -1,0 +1,25 @@
+= form_for @loan, html: { multipart: true , class: 'form-horizontal' } do |f|
+  - if @loan.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@loan.errors.count, "error")} prohibited this asset from being saved:"
+      ul
+        - @loan.errors.full_messages.each do |message|
+          li = message
+  .form
+    .field
+      = f.label :employee
+      = f.text_field :employee
+    .field
+      = f.label :item
+      = f.collection_select(:asset_id, Asset.all.order(:item_description), :id, :item_description)
+    .field
+      = f.label :dateBorrowed
+      = f.date_field :dateBorrowed
+    .field
+      = f.label :dateReturned
+      = f.date_field :dateReturned
+    .field
+      = f.label :status
+      = f.select :status, Loan.status_types.keys
+    .actions
+      = f.submit

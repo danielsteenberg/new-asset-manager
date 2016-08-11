@@ -1,0 +1,31 @@
+= render "shared/asset_nav"
+.container
+  .page-header
+    h1 Loaned Assets
+
+  = link_to "Loaned Assets", new_loan_path, class: 'btn btn-primary'
+
+  .float-left
+  table
+    thead
+      tr
+        th Employee
+        th Item
+        th Date Borrowed
+        th Date Returned
+        th Status
+        th
+
+    tbody
+      - @loans.each do |loan|
+        tr
+          td = loan.employee
+          td = loan.asset.item_description
+          td = loan.dateBorrowed
+          td = loan.dateReturned
+          td = loan.status
+          td
+            = link_to 'Show', loan, class: 'btn btn-primary'
+            = link_to 'Edit', edit_loan_path(loan), class: 'btn btn-primary'
+            = link_to 'Delete', loan, data: {:confirm => 'Are you sure?'}, :method => :delete, class: 'btn btn-primary'
+  
